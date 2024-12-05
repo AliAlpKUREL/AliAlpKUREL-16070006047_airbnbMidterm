@@ -1,0 +1,520 @@
+[
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.AuthenticationController",
+    "Method": "Login",
+    "RelativePath": "api/v1/Authentications/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "AirbnbMinimal.DTOs.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.AuthenticationController",
+    "Method": "Register",
+    "RelativePath": "api/v1/Authentications/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "AirbnbMinimal.DTOs.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.BookingController",
+    "Method": "AddBooking",
+    "RelativePath": "api/v1/Bookings/AddBooking",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "AirbnbMinimal.DTOs.AddBookingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.BookingController",
+    "Method": "ApproveBooking",
+    "RelativePath": "api/v1/Bookings/ApproveBooking",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.BookingController",
+    "Method": "GetAllBookings",
+    "RelativePath": "api/v1/Bookings/GetAllBookings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.BookingController",
+    "Method": "GetGuestBookings",
+    "RelativePath": "api/v1/Bookings/GetGuestBookings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.CommentController",
+    "Method": "AddComment",
+    "RelativePath": "api/v1/Comments/AddComment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "AirbnbMinimal.DTOs.AddCommentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.CommentController",
+    "Method": "DeleteComment",
+    "RelativePath": "api/v1/Comments/DeleteComment",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.CommentController",
+    "Method": "GetComments",
+    "RelativePath": "api/v1/Comments/GetComments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "listingId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "targetUserId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.CommentController",
+    "Method": "UpdateComment",
+    "RelativePath": "api/v1/Comments/UpdateComment",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "model",
+        "Type": "AirbnbMinimal.DTOs.UpdateCommentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.ListingController",
+    "Method": "AddListing",
+    "RelativePath": "api/v1/Listings/AddListing",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "AirbnbMinimal.DTOs.AddListingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.ListingController",
+    "Method": "DeleteListing",
+    "RelativePath": "api/v1/Listings/DeleteListing",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.ListingController",
+    "Method": "GetAllListings",
+    "RelativePath": "api/v1/Listings/GetAllListings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NoOfPeople",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Country",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "City",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "District",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Neighborhood",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MinPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaxPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.ListingController",
+    "Method": "GetListingById",
+    "RelativePath": "api/v1/Listings/GetListingById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.ListingController",
+    "Method": "UpdateListing",
+    "RelativePath": "api/v1/Listings/UpdateListing",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "model",
+        "Type": "AirbnbMinimal.DTOs.UpdateListingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.LocationController",
+    "Method": "AddLocation",
+    "RelativePath": "api/v1/Locations/AddLocation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "AirbnbMinimal.DTOs.AddLocationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.LocationController",
+    "Method": "DeleteLocation",
+    "RelativePath": "api/v1/Locations/DeleteLocation",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.LocationController",
+    "Method": "GetAllLocations",
+    "RelativePath": "api/v1/Locations/GetAllLocations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.LocationController",
+    "Method": "GetLocationById",
+    "RelativePath": "api/v1/Locations/GetLocationById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.LocationController",
+    "Method": "UpdateLocation",
+    "RelativePath": "api/v1/Locations/UpdateLocation",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "model",
+        "Type": "AirbnbMinimal.DTOs.UpdateLocationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.UserController",
+    "Method": "BanUser",
+    "RelativePath": "api/v1/Users/BanUser",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.UserController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/v1/Users/ChangePassword",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "model",
+        "Type": "AirbnbMinimal.DTOs.ChangePasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/v1/Users/DeleteUser",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.UserController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/v1/Users/GetAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.UserController",
+    "Method": "GetBookingStats",
+    "RelativePath": "api/v1/Users/GetBookingStats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.UserController",
+    "Method": "GetUserById",
+    "RelativePath": "api/v1/Users/GetUserById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.UserController",
+    "Method": "GetUserStats",
+    "RelativePath": "api/v1/Users/GetUserStats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.UserController",
+    "Method": "GetTopRatedListings",
+    "RelativePath": "api/v1/Users/TopRatedListings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.UserController",
+    "Method": "UnbanUser",
+    "RelativePath": "api/v1/Users/UnbanUser",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AirbnbMinimal.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/v1/Users/UpdateUser",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "model",
+        "Type": "AirbnbMinimal.DTOs.UpdateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
